@@ -1,0 +1,210 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra Superior */
+.top-bar {
+    background-color: #6a0dad; /* Roxo mais forte */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top-bar .company-name {
+    font-size: 24px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.top-bar .logo img {
+    width: 120px; /* Tamanho adequado para a logo */
+    height: auto;
+}
+
+/* Fundo com gradiente */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #6a0dad, #8a2be2); /* Degradê roxo e violeta */
+    padding: 20px;
+    color: #ffffff;
+    padding-top: 80px; /* Espaço para a barra superior fixa */
+}
+
+/* Container principal */
+.main-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Títulos */
+.system-name {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f3f3f3;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+/* Barra de Pesquisa */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-bar .search-btn {
+    background-color: #6a0dad;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar .search-btn:hover {
+    background-color: #5e0c9c;
+}
+
+/* Lista de Produtos */
+.product-list {
+    margin-bottom: 30px;
+}
+
+.product-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-list li {
+    background-color: rgba(255, 255, 255, 0.15);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.product-quantity, .product-supplier, .precofinal {
+    font-size: 0.9rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.details-btn {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.edit-btn {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.details-btn:hover { background-color: #0056b3; }
+.edit-btn:hover { background-color: #1c7d32; }
+.delete-btn:hover { background-color: #b52a3d; }
+
+/* Botão para Cadastrar Novo Produto */
+.actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.add-btn {
+    background-color: #6a0dad;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #5e0c9c;
+}
+
+/* Estilo do rodapé */
+.footer {
+    background-color: #333; /* Cor de fundo escura */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinhamento central do texto */
+    padding: 10px 0; /* Espaçamento interno */
+    position: fixed; /* Fixa o rodapé na parte inferior */
+    bottom: 0; /* Coloca o rodapé na parte inferior da tela */
+    left: 0;
+    width: 100%;
+    font-size: 0.9rem; /* Tamanho da fonte */
+}
+
+/* Adicionando hover para o texto do copyright, se desejado */
+.footer p:hover {
+    color: #2575fc; /* Cor no hover */
+}

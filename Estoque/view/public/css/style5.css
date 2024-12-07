@@ -1,0 +1,103 @@
+/* Corpo da página */
+body {
+    background: linear-gradient(to bottom, #6a0dad, #00bfff); /* Degradê de roxo para azul */
+    font-family: Arial, sans-serif;
+    color: #fff; /* Texto branco para contraste */
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra Superior */
+.top-bar {
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo semi-transparente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+}
+
+.top-bar .company-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.top-bar .logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* Container principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels e Inputs */
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #6a0dad; /* Cor do foco roxo */
+    outline: none;
+}
+
+/* Botão de confirmação */
+a.btn {
+    text-align: center;
+    background-color: #6a0dad; /* Cor roxa para o botão */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a.btn:hover {
+    background-color: #4b0082; /* Cor roxa mais escura ao passar o mouse */
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 05px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

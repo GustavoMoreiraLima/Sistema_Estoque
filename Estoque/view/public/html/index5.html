@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="../css/style5.css">
+</head>
+<body>
+<div class="container">
+    <h2>Cadastro de Produto</h2>
+    <form method="post">
+        <label for="product_name">Nome do Produto:</label>
+        <input type="text" id="product_name" name="product_name" required>
+
+        <label for="unit_type">Tipo de Unidade:</label>
+        <input type="text" id="unit_type" name="unit_type" required>
+
+        <label for="reference">Referência:</label>
+        <input type="text" id="reference" name="reference" required>
+
+        <label for="ncm">NCM:</label>
+        <input type="text" id="ncm" name="ncm" required>
+
+        <label for="brand">Marca:</label>
+        <input type="text" id="brand" name="brand" required>
+
+        <label for="supplier">Fornecedor:</label>
+        <input type="text" id="supplier" name="supplier" required>
+
+        <label for="barcode">Código de Barras:</label>
+        <input type="text" id="barcode" name="barcode" required>
+
+        <label for="price">Preço:</label>
+        <input type="text" id="price" name="price" required>
+
+        <label for="stock">Estoque:</label>
+        <input type="text" id="stock" name="stock" required>
+
+        <button type="submit" name="cadastrar_produto" value="Cadastrar_Produto">Cadastrar Produto</button>
+    </form>
+</div>
+</body>
+</html>
+<?php
+include __DIR__ . "/../view_cadastro_produtos.php"
+?>
